@@ -971,7 +971,63 @@ body {
     }, { once: true });
   </script>
   <div class="night"></div>
-  
+
+ <div class="words">
+  <span>Hermosa</span>
+  <span>Divina</span>
+  <span>Preciosa</span>
+  <span>Princesa mía</span>
+  <span>Mujer maravillosa</span>
+  <span>Amor de mi vida</span>
+  <span>Mi reina</span>
+  <span>Tesoro</span>
+  <span>Dulzura</span>
+  <span>Mi cielo</span>
+  <span>Corazón</span>
+  <span>Mi todo</span>
+</div>
+
+<style>
+  .words {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493; /* brillo romántico */
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .words span {
+    position: absolute;
+    opacity: 0;
+    animation: fade 36s infinite;
+  }
+
+  /* animaciones escalonadas según la cantidad de palabras */
+  .words span:nth-child(1)  { animation-delay: 0s; }
+  .words span:nth-child(2)  { animation-delay: 3s; }
+  .words span:nth-child(3)  { animation-delay: 6s; }
+  .words span:nth-child(4)  { animation-delay: 9s; }
+  .words span:nth-child(5)  { animation-delay: 12s; }
+  .words span:nth-child(6)  { animation-delay: 15s; }
+  .words span:nth-child(7)  { animation-delay: 18s; }
+  .words span:nth-child(8)  { animation-delay: 21s; }
+  .words span:nth-child(9)  { animation-delay: 24s; }
+  .words span:nth-child(10) { animation-delay: 27s; }
+  .words span:nth-child(11) { animation-delay: 30s; }
+  .words span:nth-child(12) { animation-delay: 33s; }
+
+  @keyframes fade {
+    0%, 20%   { opacity: 0; }
+    30%, 70%  { opacity: 1; }
+    80%, 100% { opacity: 0; }
+  }
+</style>   
+    
   <div class="special-text">Estas flores son un pequeño gesto para una gran persona mel</div>
   
 
@@ -1323,4 +1379,5 @@ body {
 </body>
 
 </html>
+
 
